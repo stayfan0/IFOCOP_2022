@@ -18,4 +18,4 @@
 ![texte alternatif](https://joplinapp.org/images/logo-text-blue.svg)
 
 [lien](lien)
-[lien](https://erp.ifocop.fr/ifocop/)
+[lien vers le site](https://erp.ifocop.fr/ifocop/)
