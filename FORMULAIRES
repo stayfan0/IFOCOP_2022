@@ -1,0 +1,10 @@
+ <h1>FORMULAIRES</h1>
+    <form method="get" action="">
+      <input type="text" name="name" id="input name" />
+    </form>
+
+    <form method="get" action="">
+      <input type="text" id="pseudo" />
+      <input type="password" id="pass" />
+      <input type="email" id="mail" />
+    </form>
