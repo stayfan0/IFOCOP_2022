@@ -1,0 +1,23 @@
+4x0
+
+<audio controls src="audio/audio1.mp3">
+      Le texte à afficher si le son ne se charge pas
+</audio>
+
+
+<audio controls>
+      <source src="audios/audio.ogg" type="audio/ogg" />
+      <source src="audios/audio.wav" type="audio/wav" />
+      <source src="audios/audio.mp3" type="audio/mp3" />
+      Désolé, votre navigateur ne peut lire ce fichier audio.
+</audio>
+
+<video controls autoplay muted width=30% src="videos/video1.mp4">
+      Désolé, votre navigateur ne peut lire cette vidéo.
+</video>
+
+<video width="500px" height="auto" poster="img/macarons_small_400.jpg" controls autoplay muted loop>
+      <source src="videos/video1.mp4" type="video/mp4">
+      <source src="videos/video1.ogv" type="video/ogg">
+      Désolé, votre navigateur ne peut lire cette vidéo.
+</video>
