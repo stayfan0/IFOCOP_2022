@@ -7,6 +7,10 @@ CENTRER LES ELEMENTS DE H1
 DONNER UNE COULEUR AU TITRE DE NIVEAU
   <h1 style="color: rgb(0, 38, 253)">TITRE DE NIVEAU 1</h1>  
   
+ RELIER HTML ET CSS 
+  <link rel="stylesheet" href="./css/style.css">
+
+  
   <!DOCTYPE html>
 <html lang="en">
   <head>
