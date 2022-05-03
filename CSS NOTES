@@ -9,6 +9,22 @@ DONNER UNE COULEUR AU TITRE DE NIVEAU
   
  RELIER HTML ET CSS 
   <link rel="stylesheet" href="./css/style.css">
+  
+  
+  BOX MODEL
+  #box{
+    background-color: rgb(64, 114, 6);
+    padding: 20px;
+    border-style: solid;
+    border-color: brown;
+    border-width: 5px;
+    
+    ou 
+    
+    #box{
+    background-color: rgb(64, 114, 6);
+    padding: 20px;
+    border: solid #fff000 5px
 
   
   <!DOCTYPE html>
