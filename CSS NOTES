@@ -26,6 +26,14 @@ DONNER UNE COULEUR AU TITRE DE NIVEAU
     padding: 20px;
     border: solid #fff000 5px
 
+A TOUJOURS RAJOUTER EN DEBUT DE CODE CSS
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
   
   <!DOCTYPE html>
 <html lang="en">
