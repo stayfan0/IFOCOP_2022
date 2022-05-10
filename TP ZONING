@@ -1,0 +1,115 @@
+HTML CODE
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/TP_correction.css" />
+  </head>
+  <body>
+    <h1>TP</h1>
+    <div class="flx1">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <hr />
+
+    <div class="flx2">
+      <p></p>
+      <p></p>
+    </div>
+  </body>
+</html>
+
+
+CSS CODE
+
+:root {
+  --bg--purple: #8e44ad;
+  --bg--red: #c0392b;
+  --bg--grey: #bdc3c7;
+  --w200px: 200px;
+  --w50px: 50px;
+  --h50px: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+body {
+  padding: 40px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h2 {
+  color: #ff0000;
+}
+
+h3 {
+  margin: 30px 0 0 0;
+}
+
+hr {
+  height: 10px;
+  background-color: #ff0000;
+  margin: 10px 0 10px 0;
+}
+
+.flx1 {
+  display: flex;
+}
+
+.flx1 * {
+  width: var(--w50px);
+  height: var(--h50px);
+}
+
+.flx1 :first-child {
+  margin-right: auto;
+  background-color: var(--bg--red);
+  width: var(--w200px);
+}
+
+.flx1 :nth-child(2) {
+  background-color: var(--bg--grey);
+}
+
+.flx1 :last-child {
+  background-color: var(--bg--purple);
+  margin-left: 10px;
+}
+
+.flx2 {
+  display: flex;
+  gap: 10px;
+}
+
+.flx2 :first-child {
+  background-color: var(--bg--purple);
+  border-radius: 50%;
+  width: var(--w50px);
+  height: var(--h50px);
+}
+
+.flx2 :last-child {
+  background-color: var(--bg--grey);
+  width: var(--w200px);
+  height: var(--h50px);
+}
