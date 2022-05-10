@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/flexbox.css" />
+  </head>
+  <body>
+    <h1>FLEXBOX</h1>
+
+    <h2>flex-direction</h2>
+
+    <h3>flex-direction: row (par défaut)</h3>
+    <div class="parent">
+      <p class="item">Item 1</p>
+      <p class="item">Item 2</p>
+      <p class="item">Item 3</p>
+      <p class="item">Item 4</p>
+    </div>
+
+    <h3>flex-direction: column</h3>
+    <div class="parent colonne">
+      <p class="item">Item 1</p>
+      <p class="item">Item 2</p>
+      <p class="item">Item 3</p>
+      <p class="item">Item 4</p>
+    </div>
+
+    <h3>flex-direction: row-reverse</h3>
+    <div class="parent row-inverse">
+      <p class="item">Item 1</p>
+      <p class="item">Item 2</p>
+      <p class="item">Item 3</p>
+      <p class="item">Item 4</p>
+    </div>
+
+    <h3>flex-direction: column-reverse</h3>
+    <div class="parent column-inverse">
+      <p class="item">Item 1</p>
+      <p class="item">Item 2</p>
+      <p class="item">Item 3</p>
+      <p class="item">Item 4</p>
+    </div>
+
+    <h2>flex-wrap</h2>
+    <h3>flex-wrap: wrap</h3>
+    <div class="parent wrap">
+      <p class="item">Item 1</p>
+      <p class="item">Item 2</p>
+      <p class="item">Item 3</p>
+      <p class="item">Item 4</p>
+    </div>
+
+    <h2>justify-content</h2>
+    <h3>flex-start</h3>
+    <div class="parent flx-start">
+      <p class="item">Item 1</p>
+      <p class="item">Item 2</p>
+      <p class="item">Item 3</p>
+      <p class="item">Item 4</p>
+    </div>
+
+    <h3>flex-end</h3>
+    <div class="parent flx-end">
+      <p class="item">Item 1</p>
+      <p class="item">Item 2</p>
+      <p class="item">Item 3</p>
+      <p class="item">Item 4</p>
+    </div>
+
+    <h3>center</h3>
+    <div class="parent center">
+      <p class="item">Item 1</p>
+      <p class="item">Item 2</p>
+      <p class="item">Item 3</p>
+      <p class="item">Item 4</p>
+    </div>
+
+    <h3>space-between</h3>
+    <div class="parent espacement">
+      <p class="item">Item 1</p>
+      <p class="item">Item 2</p>
+      <p class="item">Item 3</p>
+      <p class="item">Item 4</p>
+    </div>
+
+    <h3>space-around</h3>
+    <div class="parent espace-autour">
+      <p class="item">Item 1</p>
+      <p class="item">Item 2</p>
+      <p class="item">Item 3</p>
+      <p class="item">Item 4</p>
+    </div>
+
+    <h3>space-evenly</h3>
+    <div class="parent espacement-homogene">
+      <p class="item">Item 1</p>
+      <p class="item">Item 2</p>
+      <p class="item">Item 3</p>
+      <p class="item">Item 4</p>
+    </div>
+
+    <h2>ALIGN-ITEMS</h2>
+    <h3>center</h3>
+    <div class="parent align-item-center">
+      <p class="item">Item 1</p>
+      <p class="item">Item 2</p>
+      <p class="item">Item 3</p>
+      <p class="item">Item 4</p>
+    </div>
+  </body>
+</html>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 40px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h2 {
+  color: #ff0000;
+}
+
+h3 {
+  margin: 30px 0 0 0;
+}
+
+.ib {
+  display: inline-block;
+}
+
+.parent {
+  display: flex;
+  flex-direction: row; /* par défaut */
+  gap: 10px;
+  border: solid 1px #000;
+}
+
+.colonne {
+  flex-direction: column;
+}
+
+.row-inverse {
+  flex-direction: row-reverse;
+}
+
+.column-inverse {
+  flex-direction: column-reverse;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.wrap > * {
+  flex-basis: 200px;
+  height: 300px;
+}
+
+.flx-start {
+  justify-content: flex-start;
+}
+
+.flx-end {
+  justify-content: flex-end;
+}
+
+.center {
+  justify-content: center;
+}
+
+.espacement {
+  justify-content: space-between;
+}
+
+.espace-autour {
+  justify-content: space-around;
+}
+
+.espacement-homogene {
+  justify-content: space-evenly;
+}
+
+.align-item-center {
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 50px;
+}
+
+div.parent > :first-child {
+  background-color: #86a208;
+}
+
+div.parent > :nth-child(2) {
+  background-color: #084da2;
+}
+
+div.parent > :nth-child(3) {
+  background-color: #e05e3e;
+}
+
+div.parent > :last-child {
+  background-color: #e03ec2;
+}
+
