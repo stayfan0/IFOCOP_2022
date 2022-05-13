@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FILTRAGE</title>
+        <style>
+            :root {
+                --html: #f48d48;
+                --css: #5b94ee;
+                --js: #fff820;
+                --react: #6afc42;
+            }
+
+            .box {
+                width: 100px;
+                height: 100px;
+                margin: 5px;
+                float: left;
+                transition: all 0.5s;
+            }
+
+            .box-html {
+                background-color: var(--html);
+            }
+
+            .box-css {
+                background-color: var(--css);
+            }
+
+            .box-js {
+                background-color: var(--js);
+            }
+
+            .box-react {
+                background-color: var(--react);
+            }
+
+            article {
+                width: 100%;
+            }
+
+            input[type="radio"] {
+                display: none;
+            }
+
+            label {
+                width: 200px;
+                padding: 5px;
+                border: solid 0px red;
+                cursor: pointer;
+            }
+
+        </style>
+    </head>
+
+
+    <body>
+        <article>
+            <input type="radio" id="html" name="frontend">
+            <label for="html">HTML</label>
+
+            <input type="radio" id="css" name="frontend">
+            <label for="css">CSS</label>
+
+            <input type="radio" id="js" name="frontend">
+            <label for="js">JS</label>
+
+            <input type="radio" id="react" name="frontend">
+            <label for="react">REACT</label>
+
+            <input type="radio" id="all" name="frontend">
+            <label for="all">ALL</label>
+
+            <hr>
+
+            <div class="box box-html">HTML 1</div>
+            <div class="box box-js">JS 1</div>
+            <div class="box box-css">CSS 1</div>
+            <div class="box box-react">REACT 1</div>
+            <div class="box box-js">JS 2</div>
+            <div class="box box-html">HTML 2</div>
+            <div class="box box-js">JS 3</div>
+            <div class="box box-react">REACT 2</div>
+            <div class="box box-css">CSS 2</div>
+            <div class="box box-html">HTML 3</div>
+            <div class="box box-css">CSS 3</div>
+            <div class="box box-html">HTML 4</div>
+            <div class="box box-react">REACT 3</div>
+            <div class="box box-js">JS 4</div>
+
+        </article>
+    </body>
+
+</html>
